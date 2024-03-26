@@ -105,6 +105,11 @@
     .card-header {
         max-height: 450px;
     }
+
+    .galeria {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 200px);
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -134,13 +139,6 @@
 
     .card-description {
         font-size: 20px;
-    }
-}
-
-@media only screen and (min-width: 480px) {
-    .galeria {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(4, 200px);
     }
 }
 
