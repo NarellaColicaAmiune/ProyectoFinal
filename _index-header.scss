@@ -4,6 +4,9 @@
 $color1: rgba(174, 221, 148, 1);
 $color2: rgb(95, 163, 57);
 $color3: rgba(240, 240, 240, 1);
+$color4: rgb(0, 0, 0);
+$color5: rgb(255, 255, 255);
+$color6: rgb(162, 162, 162);
 
 @mixin degradado {
     text-align: center;
@@ -51,7 +54,7 @@ html {
 }
 
 .nav-link {
-    color: rgb(0, 0, 0) !important;
+    color: $color4 !important;
 
         &:hover {
             color: $color3 !important;
@@ -68,7 +71,7 @@ html {
 
         h1 {
             color: $color3;
-            text-shadow: 3px 2px 9px rgb(0, 0, 0);
+            text-shadow: 3px 2px 9px $color4;
             font-size: 35px;
             @include animacion;
         }
@@ -87,7 +90,7 @@ html {
 
         &:hover {
             transform: scale(1.1);
-            box-shadow: 0 0 10px rgb(255, 255, 255);
+            box-shadow: 0 0 10px $color5;
         }
 }
 
@@ -98,7 +101,7 @@ html {
             font-size: 30px;
             margin: 20px;
             padding: 20px;
-            border-bottom: 1px solid rgb(0, 0, 0);
+            border-bottom: 1px solid $color4;
         }
 
         p {

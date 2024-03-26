@@ -51,7 +51,7 @@
 
 .title-huerta {
     @include degradado;
-    background-image: linear-gradient(to right, rgb(162, 162, 162), rgb(212, 212, 212));
+    background-image: linear-gradient(to right, $color6, rgb(212, 212, 212));
     margin-right: 30px;
     margin-top: 30px;
     margin-left: 40px;
