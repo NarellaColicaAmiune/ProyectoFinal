@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Lora:ital,wght@0,400..700;1,400..700&family=M+PLUS+Code+Latin:wght@100..700&family=Merienda:wght@300..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap");
+
+$color1: rgba(174, 221, 148, 1);
+$color2: rgb(95, 163, 57);
+$color3: rgba(240, 240, 240, 1);
+
+@mixin degradado {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 40px;
+    font-size: 30px;
+    font-family: "Quicksand", sans-serif;
+}
+
+@mixin animacion {
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: aparecer 1s ease-in-out forwards;
+}
+
+@mixin animacion-aparecer {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background-color: $color1;
+
+        &-brand img{
+            height: 90px;
+        }
+}
+
+.nav-link {
+    color: rgb(0, 0, 0) !important;
+
+        &:hover {
+            color: $color3 !important;
+        }
+}
+
+.jumbotron1 {
+    height: 500px;
+    background-image: linear-gradient(#00000037, #8888882a), url(multimedia/castle-137.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: bold;
+
+        h1 {
+            color: $color3;
+            text-shadow: 3px 2px 9px rgb(0, 0, 0);
+            font-size: 35px;
+            @include animacion;
+        }
+}
+
+@keyframes aparecer {
+    @include animacion-aparecer;
+}
+
+.btn {
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: transform 0.5s ease;
+    margin-top: 20px;
+    background-image: linear-gradient(to left, $color2, $color1);
+
+        &:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 10px rgb(255, 255, 255);
+        }
+}
+
+.articulo {
+    text-align: center;
+
+        i {
+            font-size: 30px;
+            margin: 20px;
+            padding: 20px;
+            border-bottom: 1px solid rgb(0, 0, 0);
+        }
+
+        p {
+            font-size: 20px;
+        }
+}
+
+.degradado {
+    @include degradado;
+    background-image: linear-gradient(to right, $color2, $color1);
+}
+
+.nleft {
+    background-image: url(multimedia/bed-183918.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    height: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.refugio {
+    background-color: $color3;
+
+        p {
+            font-size: 25px;
+            padding: 20px;
+            text-align: center;
+        }
+}
+
+.carousel {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.title {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.ubicacion p {
+    font-size: 25px;
+    margin: 20px;
+    text-align: left;
+}
+
+.mapa {
+    background-color: $color3;
+}

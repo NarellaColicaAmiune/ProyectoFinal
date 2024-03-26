@@ -1,0 +1,72 @@
+.logo {
+    width: 90px;
+    margin-left: 10px;
+}
+
+footer {
+    background-color: $color1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+    p {
+        color: rgba(0, 0, 0, 0.6);
+    }
+}
+
+.redes {
+    margin-right: 50px;
+
+    a {
+        text-decoration: none;
+        letter-spacing: 10px;
+        color: rgba(0, 0, 0);
+    }
+
+    i {
+        font-size: 35px;
+    }
+}
+
+footer a:hover {
+    color: $color3;
+}
+
+.whatsapp {
+    height: 40px;
+    width: 40px;
+    background-color: rgb(0, 255, 127);
+    color: rgb(255, 255, 255);
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 30px;
+    border: 2px solid rgb(255, 255, 255);
+
+        &:hover {
+            color: rgb(162, 162, 162);
+        }
+}
+
+.subir {
+    height: 40px;
+    width: 40px;
+    background-color: $color1;
+    color: rgb(255, 255, 255);
+    position: fixed;
+    right: 40px;
+    bottom: 90px;
+    font-size: 25px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 3px rgb(249, 249, 249);
+
+        &:hover {
+            color: rgb(162, 162, 162);
+        }
+}

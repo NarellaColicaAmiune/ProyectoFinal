@@ -1,0 +1,138 @@
+.jumbotron4 {
+    height: 500px;
+    background-image: url(multimedia/woman-437.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h1 {
+        text-shadow: 3px 2px 9px rgb(125, 95, 95);
+        @include animacion;
+    }
+}
+
+.img1,
+.img2,
+.img3 {
+    width: 100%;
+    display: block;
+}
+
+.card-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contenedor1 {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: rgba(240, 240, 240, 1);
+    margin-bottom: 10px;
+    margin-top: 15px;
+    border-radius: 8px;
+
+    &-header {
+        height: auto;
+        width: 100%;
+        object-position: 50% 50%;
+        object-fit: cover;
+        overflow: hidden;
+
+        img {
+            border-radius: 10px;
+        }
+    }
+
+    &-title {
+        text-align: center;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    &-description {
+        flex-grow: 1;
+    }
+
+    &-body {
+        border-radius: 0 0 10px 10px;
+        background-color: $color3;
+        padding: 20px 15px;
+        text-align: justify;
+        border: 1px solid rgb(202, 202, 202);
+    }
+}
+
+.accordion-header {
+
+    .accordion-button {
+        font-size: 25px;
+    }
+}
+
+.accordion-body{
+    font-size: 20px;
+}
+
+.titulog {
+    @include degradado;
+    background-image: linear-gradient(to right, $color2, $color1);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.galeria {
+    width: 100%;
+    background-color: $color3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 200px);
+    padding: 20px;
+    grid-gap: 20px;
+
+    .item {
+        border: 1px solid rgb(0, 0, 0);
+        background-size: cover;
+        background-position: center;
+        border-radius: 20px;
+        transition: all 1s;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    .item1 {
+        background-image: url(multimedia/restaurant-44.webp);
+    }
+
+    .item2 {
+        background-image: url(multimedia/barista-50.webp);
+    }
+
+    .item3 {
+        background-image: url(multimedia/platter-20.webp);
+    }
+
+    .item4 {
+        background-image: url(multimedia/bed-68.webp);
+    }
+
+    .item5 {
+        background-image: url(multimedia/towel-75.webp);
+    }
+
+    .item6 {
+        background-image: url(multimedia/summer-18.webp);
+    }
+
+    .item7 {
+        background-image: url(multimedia/mountaineering-455.webp);
+    }
+
+    .item8 {
+        background-image: url(multimedia/spa-853.webp);
+    }
+}
